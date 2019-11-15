@@ -26,10 +26,12 @@ class TabIcon extends Component {
 			}
 		}
 		let param=data[this.props.navigation.state.key];
-		return  <View style={styles.tabbarContainer}>
-			<Image style={{ width: 25, height: 25,resizeMode:'contain' }} source={param.icon} />
-			<Text style={[styles.tabbarItem,selected&&{color:'#F08519'}]}>{param.title}</Text>
-		</View>
+		return(
+			<View style={styles.tabbarContainer}>
+				<Image style={{ width: 25, height: 25,resizeMode:'contain' }} source={param.icon} />
+				<Text style={[styles.tabbarItem,selected&&{color:'#F08519'}]}>{param.title}</Text>
+			</View>
+		)
 	}
 }
 

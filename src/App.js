@@ -10,6 +10,7 @@ import {
 import { Scene, Router, TabBar, Modal, Schema, Actions, Reducer, ActionConst } from 'react-native-router-flux';
 import LoginPage from './components/loginComponent.js';
 import HomeIndex from './components/indexComponent.js';
+import testIndex from './components/testComponent.js';
 import TabIcon from './common/tabIcon';
 export default class AppRoot extends Component {
   constructor(props) {
@@ -68,7 +69,7 @@ const scenes = Actions.create(
 
         <Scene key="theaters"
                hideNavBar={true}
-               component={HomeIndex}
+               component={testIndex}
                icon={TabIcon}
                titleStyle={styles.titleStyle} />
 
